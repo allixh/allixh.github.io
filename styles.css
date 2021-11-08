@@ -1,0 +1,303 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+    color: #333;
+}
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+header{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.5)),
+    url(images/img.png) center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+   
+
+}
+.navbar{
+    background: #232a34;
+    padding: 0rem;
+     overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+     width: 100%; /* Full width */
+ }
+.navbar-brand{
+    color: #fff;
+    font-size: 24px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.navbar-nav{
+    text-align: center;
+    padding: 0.8rem 0 0.2rem 0;
+
+}
+
+.navbar-nav a{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.4rem 0.1rem;
+    letter-spacing: 3px;
+    transition:opacity 0.5s ease;
+}
+
+    .navbar a:hover {
+        background: #ddd;
+        color: black;
+      }
+.banner{
+flex: 1;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+color: #fff;
+}
+.banner-title{
+    font-size: 3rem;
+    line-height: 1.2;
+
+}
+.banner p{
+    padding: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: 300;
+    word-spacing: 2px;
+
+}
+.banner form{
+    background: #fff;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 60px 20px 0 20px;
+}
+.cont .heading{
+    width: 40%;
+    padding-bottom:50px ;
+
+}
+.cont .heading h3{
+    font-size: 3em;
+    font-weight: bolder;
+    color: #333;
+    padding-bottom: 10px;
+
+}
+.cont .heading h3 span{
+    font-weight: 100;
+}
+.cont .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cont .box .columns{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+
+}
+.cont .box .columns img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+.skill .container{
+        min-height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.5)),
+        url(images/hehe.jpg) center/cover no-repeat fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        color: #fff;
+}
+footer{
+    background-color:#333 ;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top:150px ;
+
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+.social-links a{
+    border: 2px solid #fff;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+
+
+}
+
+@media screen and (min-width:600px){
+    .navbar-nav a{
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+    .banner-title{
+        font-size: 5rem;
+    }
+    .banner form{
+        margin-top: 1.4rem;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media screen and (min-width:768px ){
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+
+    }
+    
+}
+@media only screen and (max-width:768px){
+    .cont .box{
+        flex-direction: column;
+        
+    }
+    .cont .box .columns{
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width:600px){
+    .cont .heading{
+        width: 100%;
+    }
+    .cont .heading h3{
+        font-size: 1em;
+    }
+
+}
+.middle {
+    margin-top:10px;
+    float: left;
+    width: 70%;
+}
+
+/* Place text to the right */
+.right {
+    text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The bar container */
+.bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+}
+lable{
+    color:white;
+    padding:50px;
+    font-size:30px;
+}
+/* Individual bars */
+.bar-5 {width: 60%; height: 18px; background-color: black;}
+.bar-4 {width: 30%; height: 18px; background-color: black;}
+.bar-3 {width: 10%; height: 18px; background-color: black;}
+.bar-2 {width: 4%; height: 18px; background-color: black;}
+.bar-1 {width: 15%; height: 18px; background-color: black;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+    .side, .middle {
+        width: 100%;
+    }
+    .right {
+        display: none;
+    }
+}
+
+.search-input{
+    font-size: 1.1rem;
+    width: 100%;
+    outline: 0;
+    padding: 0.6rem 0;
+    border: none;
+
+}
+.search-btn{
+    width: 40px;
+    font-size: 1.1rem;
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+html{
+    scroll-behavior: smooth;
+}
+img {
+    border-radius: 50% ;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+  }
+  input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  input[type=submit] {
+  background-color:white;
+  border: none;
+  color:black;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  }
